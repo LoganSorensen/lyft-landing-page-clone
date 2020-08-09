@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
-</head>
-<body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Not Lyft</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"><a class="nav-link active" href="#">CITIES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">DRIVE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PARTNERS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">HELP</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>Apply Now</h1>
+      <p>
+        Enter your info, and then download the Lyft app to create your driver
+        profile.
+      </p>
+      <div class="cta">
+        <form>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email address"
+            required
+          />
+          <input type="text" class="form-control" placeholder="City" required />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Phone number"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Promo Code (optional)"
+          />
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="tosCheck" />
+            <label for="tosCheck" class="form-check-label"
+              >I agree to the <a href="#">Lyft terms</a></label
+            >
+          </div>
+          <button>BECOME A DRIVER</button>
+          <p>
+            Already applied?
+            <a href="#">Check out the status of your application here.</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h2>See How Much You Can Make</h2>
+      <p>How many hours do you want to drive this week?</p>
+      <form>
+        <input type="text" placeholder="Hours" />
+        <input type="text" placeholder="City" />
+        <button class="btn btn-primary">Calculate</button>
+      </form>
+    </footer>
+  </body>
 </html>

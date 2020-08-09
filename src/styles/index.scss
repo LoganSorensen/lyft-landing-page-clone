@@ -1,6 +1,19 @@
-$body-color: slateblue;
+// $body-color: slateblue;
+$accent-color: #ea0b8c;
 
-body {
-  color: $body-color;
-  font-family: sans-serif;
+// body {
+//   color: $body-color;
+//   font-family: sans-serif;
+// }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 8%;
+  border: 1px solid red;
+}
+
+footer {
+  border: 1px solid red;
 }
