@@ -9,11 +9,12 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <title>Not Lyft</title>
+    <title>Luft</title>
   </head>
   <body>
+    <img src="./styles/background.jpg" />
     <nav>
-      <div class="logo">Logo</div>
+      <div class="logo"><a href="index.html">Luft</a></div>
       <ul class="nav justify-content-end">
         <li class="nav-item"><a class="nav-link active" href="#">CITIES</a></li>
         <li class="nav-item"><a class="nav-link" href="#">DRIVE</a></li>
@@ -23,12 +24,16 @@
       </ul>
     </nav>
     <div class="content">
-      <h1>Apply Now</h1>
-      <p>
-        Enter your info, and then download the Lyft app to create your driver
-        profile.
-      </p>
+      <div class="content-text">
+        <p>Make up to $35/hr</p>
+        <p>Driving Your Car</p>
+      </div>
       <div class="cta">
+        <h1>Apply Now</h1>
+        <p>
+          Enter your info, and then download the Luft app to create your driver
+          profile.
+        </p>
         <form>
           <input
             type="text"
@@ -63,25 +68,35 @@
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="tosCheck" />
             <label for="tosCheck" class="form-check-label"
-              >I agree to the <a href="#">Lyft terms</a></label
+              >I agree to the <a href="#">Luft terms</a></label
             >
           </div>
-          <button>BECOME A DRIVER</button>
-          <p>
-            Already applied?
-            <a href="#">Check out the status of your application here.</a>
-          </p>
+          <button class="btn">BECOME A DRIVER</button>
         </form>
+        <p>
+          Already applied?
+          <a href="#">Check out the status of your application here.</a>
+        </p>
       </div>
     </div>
     <footer>
-      <h2>See How Much You Can Make</h2>
-      <p>How many hours do you want to drive this week?</p>
-      <form>
-        <input type="text" placeholder="Hours" />
-        <input type="text" placeholder="City" />
-        <button class="btn btn-primary">Calculate</button>
-      </form>
+      <div class="wage-calc">
+        <h2>See How Much You Can Make</h2>
+        <p>How many hours do you want to drive this week?</p>
+        <form>
+          <div class="form-row">
+            <div class="col hours">
+              <input class="form-control" type="text" placeholder="Hours" />
+            </div>
+            <div class="col city">
+              <input class="form-control" type="text" placeholder="City" />
+            </div>
+            <div class="col">
+              <button class="btn">CALCULATE</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </footer>
   </body>
 </html>

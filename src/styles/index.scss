@@ -1,19 +1,126 @@
-// $body-color: slateblue;
 $accent-color: #ea0b8c;
+$accent-hover: #c00b74;
+$pink: #ff00bf;
+$footer-bg: #d8dfe6;
+$black: #11111f;
 
-// body {
-//   color: $body-color;
-//   font-family: sans-serif;
-// }
+body {
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.9;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 8%;
-  border: 1px solid red;
+  padding: 0 8%;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .logo {
+    color: white;
+
+    a {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0;
+
+    &:hover {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+  }
+}
+
+.btn {
+  background-color: $accent-color;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+    background-color: $accent-hover;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68vh;
+
+  a {
+    color: $accent-color;
+    &:hover {
+      color: $accent-hover;
+    }
+  }
+  
+  .content-text {
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: bold;
+  
+    p {
+      margin: 0;
+      color: white;
+    }
+  }
+}
+
+
+.cta {
+  width: 20%;
+  height: 70vh;
+  margin-right: 8%;
+  margin-top: 5%;
+  padding: 1.5%;
+  border-radius: 8px;
+  background-color: white;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    margin: 3% 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 3% 0;
+  }
 }
 
 footer {
-  border: 1px solid red;
+  height: 24vh;
+  background-color: $footer-bg;
+  padding: 2% 10% 0%;
+
+  .wage-calc {
+    width: 50%;
+  }
+
+  h2 {
+    margin-bottom: 3%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
